@@ -1,0 +1,8 @@
+D:\02_Test\TCPListenerTest\SECSComDriver\bin\Debug\SECSControl.dll
+D:\02_Test\TCPListenerTest\SECSComDriver\bin\Debug\SECSControl.pdb
+D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSControl.csproj.AssemblyReference.cache
+D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSControl.Properties.Resources.resources
+D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSControl.csproj.GenerateResource.cache
+D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSControl.csproj.CoreCompileInputs.cache
+D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSControl.dll
+D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSControl.pdb

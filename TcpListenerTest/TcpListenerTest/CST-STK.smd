@@ -1,0 +1,1494 @@
+<?xml version="1.0"?>
+<SECSMessage>
+  <S1F0_ABORTTRANSACTION>
+    <Header>
+      <MessageName>S1F0_ABORTTRANSACTION</MessageName>
+      <Description PairName="S1F-1">Abort Transaction</Description>
+      <Stream>1</Stream>
+      <Function>0</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S1F0_ABORTTRANSACTION>
+  <S1F0_ABORTTRANSACTION>
+    <Header>
+      <MessageName>S1F0_ABORTTRANSACTION</MessageName>
+      <Description PairName="S1F-1">Abort Transaction</Description>
+      <Stream>1</Stream>
+      <Function>0</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S1F0_ABORTTRANSACTION>
+  <!-- ========================================================== -->
+  <AREYOUTHERE>
+    <Header>
+      <MessageName>S1F1_AREYOUTHERE</MessageName>
+      <Description PairName="S1F1">Are You There Request</Description>
+      <Stream>1</Stream>
+      <Function>1</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </AREYOUTHERE>
+  <ONLINEDATA>
+    <Header>
+      <MessageName>ONLINEDATA</MessageName>
+      <Description PairName="S1F1">Are You There Request</Description>
+      <Stream>1</Stream>
+      <Function>2</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="64" Fixed="False" ItemName="MDLN" />
+        <A Count="64" Fixed="False" ItemName="SOFTREV" />
+      </L>
+    </DataItem>
+  </ONLINEDATA>
+  <!-- ========================================================== -->
+  <AREYOUTHERE>
+    <Header>
+      <MessageName>AREYOUTHERE</MessageName>
+      <Description PairName="S1F1">Are You There Request</Description>
+      <Stream>1</Stream>
+      <Function>1</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="64" Fixed="False" ItemName="MDLN" />
+        <A Count="64" Fixed="False" ItemName="SOFTREV" />
+      </L>
+    </DataItem>
+  </AREYOUTHERE>
+  <ONLINEDATA>
+    <Header>
+      <MessageName>ONLINEDATA</MessageName>
+      <Description PairName="S1F1">Are You There Request</Description>
+      <Stream>1</Stream>
+      <Function>2</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="64" Fixed="False" ItemName="MDLN" />
+        <A Count="64" Fixed="False" ItemName="SOFTREV" />
+      </L>
+    </DataItem>
+  </ONLINEDATA>
+  <!-- ========================================================== -->
+  <S1F3>
+    <Header>
+      <MessageName>S1F3_SelectedEquipmentStatusRequest</MessageName>
+      <Description PairName="S1F3">Selected Equipment Status Request</Description>
+      <Stream>1</Stream>
+      <Function>3</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="100" Fixed="False" ItemName="SVIDCOUNT">
+        <U2 Count="1" Fixed="True" ItemName="SVID">0</U2>
+      </L>
+    </DataItem>
+  </S1F3>
+  <S1F4>
+    <Header>
+      <MessageName>S1F4</MessageName>
+      <Description PairName="S1F3">Selected Equipment Status Request</Description>
+      <Stream>1</Stream>
+      <Function>4</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S1F4>
+  <!-- ========================================================== -->
+  <S1F11>
+    <Header>
+      <MessageName>S1F11_StatusVariableNamelistRequest</MessageName>
+      <Description PairName="S1F11">Status Variable Namelist Request</Description>
+      <Stream>1</Stream>
+      <Function>11</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="100" Fixed="False" ItemName="SVIDCOUNT">
+        <U2 Count="1" Fixed="True" ItemName="SVID">0</U2>
+      </L>
+    </DataItem>
+  </S1F11>
+  <S1F12>
+    <Header>
+      <MessageName>S1F12</MessageName>
+      <Description PairName="S1F12">Status Variable Namelist Reply</Description>
+      <Stream>1</Stream>
+      <Function>12</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S1F12>
+  <!-- ========================================================== -->
+  <ConnectHost>
+    <Header>
+      <MessageName>S1F13_EstablishCommunicationRequest</MessageName>
+      <Description PairName="S1F13">Establish Communications Request</Description>
+      <Stream>1</Stream>
+      <Function>13</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="64" Fixed="False" ItemName="MDLN" />
+        <A Count="64" Fixed="False" ItemName="SOFTREV" />
+      </L>
+    </DataItem>
+  </ConnectHost>
+  <HostConnected>
+    <Header>
+      <MessageName>HostConnectedFromhost</MessageName>
+      <Description PairName="S1F13">Establish Communications Request</Description>
+      <Stream>1</Stream>
+      <Function>14</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="COMMACK">0</B>
+        <L Count="0" Fixed="True" ItemName="" />
+      </L>
+    </DataItem>
+  </HostConnected>
+  <!-- ========================================================== -->
+  <ConnectHost>
+    <Header>
+      <MessageName>S1F13_EstablishCommunicationRequest</MessageName>
+      <Description PairName="S1F13">Establish Communications Request</Description>
+      <Stream>1</Stream>
+      <Function>13</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="0" Fixed="True" ItemName="" />
+    </DataItem>
+  </ConnectHost>
+  <HostConnected>
+    <Header>
+      <MessageName>HostConnected</MessageName>
+      <Description PairName="S1F13">Establish Communications Request</Description>
+      <Stream>1</Stream>
+      <Function>14</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="COMMACK">0</B>
+        <L Count="2" Fixed="True" ItemName="">
+          <A Count="64" Fixed="False" ItemName="MDLN" />
+          <A Count="64" Fixed="False" ItemName="SOFTREV" />
+        </L>
+      </L>
+    </DataItem>
+  </HostConnected>
+  <!-- ========================================================== -->
+  <REQOFFLINE>
+    <Header>
+      <MessageName>S1F15_REQOFFLINE</MessageName>
+      <Description PairName="S1F15">Request OFF-LINE</Description>
+      <Stream>1</Stream>
+      <Function>15</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </REQOFFLINE>
+  <REQOFFLINEACK>
+    <Header>
+      <MessageName>REQOFFLINEACK</MessageName>
+      <Description PairName="S1F15">Request OFF-LINE</Description>
+      <Stream>1</Stream>
+      <Function>16</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="OFLACK">0</B>
+    </DataItem>
+  </REQOFFLINEACK>
+  <!-- ========================================================== -->
+  <REQONLINE>
+    <Header>
+      <MessageName>S1F17_REQONLINE</MessageName>
+      <Description PairName="S1F17">Request ON-LINE</Description>
+      <Stream>1</Stream>
+      <Function>17</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </REQONLINE>
+  <REQONLINEACK>
+    <Header>
+      <MessageName>REQONLINEACK</MessageName>
+      <Description PairName="S1F17">Request ON-LINE</Description>
+      <Stream>1</Stream>
+      <Function>18</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="ONLACK">0</B>
+    </DataItem>
+  </REQONLINEACK>
+  <!-- ========================================================== -->
+  <S2F13>
+    <Header>
+      <MessageName>S2F13_EquipmentConstantSend</MessageName>
+      <Description PairName="S2F13">Equipment Constant Send</Description>
+      <Stream>2</Stream>
+      <Function>13</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="100" Fixed="False" ItemName="ECIDCOUNT">
+        <U2 Count="1" Fixed="True" ItemName="ECID">0</U2>
+      </L>
+    </DataItem>
+  </S2F13>  
+  <S2F14>
+    <Header>
+      <MessageName>S2F14</MessageName>
+      <Description PairName="S2F14">Equipment Constant Ack </Description>
+      <Stream>2</Stream>
+      <Function>14</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S2F14>
+  <!-- ========================================================== -->
+  <ECS>
+    <Header>
+      <MessageName>S2F15_EquipmentConstantSend</MessageName>
+      <Description PairName="S2F15">Equipment Constant Send</Description>
+      <Stream>2</Stream>
+      <Function>15</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="100" Fixed="False" ItemName="">
+        <L Count="2" Fixed="True" ItemName="">
+          <U2 Count="1" Fixed="True" ItemName="ECID">0</U2>
+          <A Count="7" Fixed="True" ItemName="ECV">gdsfgsd</A>
+        </L>
+      </L>
+    </DataItem>
+  </ECS>
+  <ECA>
+    <Header>
+      <MessageName>ECA</MessageName>
+      <Description PairName="S2F16">Equipment Constant Send</Description>
+      <Stream>2</Stream>
+      <Function>16</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="EAC">0</B>
+    </DataItem>
+  </ECA>
+  <!-- ========================================================== -->
+  <DTR>
+    <Header>
+      <MessageName>S2F17_DateAndTimeRequest</MessageName>
+      <Description PairName="S2F17">Date And time request</Description>
+      <Stream>2</Stream>
+      <Function>17</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </DTR> 
+  
+  <DTS>
+    <Header>
+      <MessageName>S2F18_DateAndTimeSend</MessageName>
+      <Description PairName="S2F18">Date And time request</Description>
+      <Stream>2</Stream>
+      <Function>18</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <A Count="16" Fixed="True" ItemName="TIME">                </A>
+    </DataItem>
+  </DTS>
+  <!-- ========================================================== -->
+  <S2F29>
+    <Header>
+      <MessageName>S2F29_EquipmentConstantNamelistRequest</MessageName>
+      <Description PairName="S2F29">Equipment Constant Namelist Request </Description>
+      <Stream>2</Stream>
+      <Function>29</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="100" Fixed="False" ItemName="ECIDCOUNT">
+        <U2 Count="1" Fixed="True" ItemName="ECID">0</U2>
+      </L>
+    </DataItem>
+  </S2F29>
+  <S2F30>
+    <Header>
+      <MessageName>S2F30</MessageName>
+      <Description PairName="S2F30">Equipment Constant Namelist </Description>
+      <Stream>2</Stream>
+      <Function>30</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S2F30>
+  <!-- ========================================================== -->
+  <DATETIMESETDATA>
+    <Header>
+      <MessageName>S2F31_DATETIMESETDATA</MessageName>
+      <Description PairName="S2F31">Date and Time Set Request</Description>
+      <Stream>2</Stream>
+      <Function>31</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <A Count="16" Fixed="True" ItemName="TIME">                </A>
+    </DataItem>
+  </DATETIMESETDATA>
+  <DATETIMESETDATA>
+    <Header>
+      <MessageName>S2F31_DATETIMESETDATA</MessageName>
+      <Description PairName="S2F31">Date and Time Set Request</Description>
+      <Stream>2</Stream>
+      <Function>32</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="TIACK">0</B>
+    </DataItem>
+  </DATETIMESETDATA>
+  <!-- ========================================================== -->
+  <S2F33>
+    <Header>
+      <MessageName>DefineReport</MessageName>
+      <Description PairName="S2F33">Define Report</Description>
+      <Stream>2</Stream>
+      <Function>33</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <U4 Count="1" Fixed="True" ItemName="DATAID">0</U4>
+        <L Count="100" Fixed="False" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <U2 Count="1" Fixed="True" ItemName="RPTID">0</U2>
+            <L Count="100" Fixed="False" ItemName="">
+              <U2 Count="1" Fixed="True" ItemName="VID">0</U2>
+            </L>
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </S2F33>
+  <S2F34>
+    <Header>
+      <MessageName>S2F34</MessageName>
+      <Description PairName="S2F34">Define Report Ack</Description>
+      <Stream>2</Stream>
+      <Function>34</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="DRACK">0</B>
+    </DataItem>
+  </S2F34>
+  <!-- ========================================================== -->
+  <S2F35>
+    <Header>
+      <MessageName>LinkEventReport</MessageName>
+      <Description PairName="S2F35">Link Event Report </Description>
+      <Stream>2</Stream>
+      <Function>35</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <U4 Count="1" Fixed="True" ItemName="DATAID">0</U4>
+        <L Count="100" Fixed="False" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <U2 Count="1" Fixed="True" ItemName="CEID">0</U2>
+            <L Count="100" Fixed="False" ItemName="">
+              <U2 Count="1" Fixed="True" ItemName="PRTID">0</U2>
+            </L>
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </S2F35>
+  <S2F36>
+    <Header>
+      <MessageName>S2F36</MessageName>
+      <Description PairName="S2F36">Link Event Report Ack </Description>
+      <Stream>2</Stream>
+      <Function>36</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="LRACK">0</B>
+    </DataItem>
+  </S2F36>
+  <!-- ========================================================== -->
+  <S2F37>
+    <Header>
+      <MessageName>EnableDisableReport</MessageName>
+      <Description PairName="S2F37">Enable/Disable Event Report</Description>
+      <Stream>2</Stream>
+      <Function>37</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <BOOLEAN Count="1" Fixed="True" ItemName="CEED">0</BOOLEAN>
+        <L Count="100" Fixed="False" ItemName="">         
+            <U2 Count="1" Fixed="True" ItemName="CEID">0</U2>          
+        </L>
+      </L>
+    </DataItem>
+  </S2F37>
+  <S2F38>
+    <Header>
+      <MessageName>S2F38</MessageName>
+      <Description PairName="S2F38">Enable/Disable Event Report Ack</Description>
+      <Stream>2</Stream>
+      <Function>38</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="ERACK">0</B>
+    </DataItem>
+  </S2F38>
+  <!-- ========================================================== -->
+  <PAUSE>
+    <Header>
+      <MessageName>PAUSE</MessageName>
+      <Description PairName="S2F41">Host Command Send (PAUSE)</Description>
+      <Stream>2</Stream>
+      <Function>41</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="5" Fixed="True" ItemName="RCMD">PAUSE</A>
+        <L Count="0" Fixed="True" ItemName="CPCOUNT" />
+      </L>
+    </DataItem>
+  </PAUSE>
+  <PAUSE_RESPONSE>
+    <Header>
+      <MessageName>PAUSE_RESPONSE</MessageName>
+      <Description PairName="S2F41">Host Command Send (PAUSE)</Description>
+      <Stream>2</Stream>
+      <Function>42</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="HCACK" />
+        <L Count="0" Fixed="True" ItemName="" />
+      </L>
+    </DataItem>
+  </PAUSE_RESPONSE>
+  <!-- ========================================================== -->
+  <RESUME>
+    <Header>
+      <MessageName>RESUME</MessageName>
+      <Description PairName="S2F41">Host Command Send (RESUME)</Description>
+      <Stream>2</Stream>
+      <Function>41</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="6" Fixed="True" ItemName="RCMD">RESUME</A>
+        <L Count="0" Fixed="True" ItemName="CPCOUNT" />
+      </L>
+    </DataItem>
+  </RESUME>
+  <RESUME_RESPONSE>
+    <Header>
+      <MessageName>RESUME_RESPONSE</MessageName>
+      <Description PairName="S2F41">Host Command Send (RESUME)</Description>
+      <Stream>2</Stream>
+      <Function>42</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="HCACK" />
+        <L Count="0" Fixed="True" ItemName="" />
+      </L>
+    </DataItem>
+  </RESUME_RESPONSE>
+  <!-- ========================================================== -->
+  <INSTALL>
+    <Header>
+      <MessageName>INSTALL</MessageName>
+      <Description PairName="S2F41">Host Command Send (INSTALL)</Description>
+      <Stream>2</Stream>
+      <Function>41</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="18" Fixed="True" ItemName="RCMD">CARRIERDATAINSTALL</A>
+        <L Count="2" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">CARRIERID</A>
+            <A Count="64" Fixed="False" ItemName="CPVAL" />
+          </L>
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="10" Fixed="True" ItemName="CPNAME">CARRIERLOC</A>
+            <A Count="64" Fixed="False" ItemName="CPVAL" />
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </INSTALL>
+  <INSTALL_RESPONSE>
+    <Header>
+      <MessageName>INSTALL_RESPONSE</MessageName>
+      <Description PairName="S2F41">Host Command Send (INSTALL)</Description>
+      <Stream>2</Stream>
+      <Function>42</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="HCACK">0</B>
+        <L Count="2" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">CARRIERID</A>
+            <B Count="1" Fixed="True" ItemName="CPACK" />
+          </L>
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="10" Fixed="True" ItemName="CPNAME">CARRIERLOC</A>
+            <B Count="1" Fixed="True" ItemName="CPACK" />
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </INSTALL_RESPONSE>
+  <!-- ========================================================== -->
+  <REMOVE>
+    <Header>
+      <MessageName>REMOVE</MessageName>
+      <Description PairName="S2F41">Host Command Send (REMOVE)</Description>
+      <Stream>2</Stream>
+      <Function>41</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="17" Fixed="True" ItemName="RCMD">CARRIERDATAREMOVE</A>
+        <L Count="1" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">CARRIERID</A>
+            <A Count="64" Fixed="False" ItemName="CPVAL" />
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </REMOVE>
+  <REMOVE_RESPONSE>
+    <Header>
+      <MessageName>REMOVE_RESPONSE</MessageName>
+      <Description PairName="S2F41">Host Command Send (REMOVE)</Description>
+      <Stream>2</Stream>
+      <Function>42</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="HCACK">0</B>
+        <L Count="1" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">CARRIERID</A>
+            <B Count="1" Fixed="True" ItemName="CPACK" />
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </REMOVE_RESPONSE>
+  <!-- ========================================================== -->
+  <ABORT>
+    <Header>
+      <MessageName>ABORT</MessageName>
+      <Description PairName="S2F41">Host Command Send (ABORT)</Description>
+      <Stream>2</Stream>
+      <Function>41</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="5" Fixed="True" ItemName="RCMD">ABORT</A>
+        <L Count="1" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">COMMANDID</A>
+            <A Count="64" Fixed="False" ItemName="CPVAL" />
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </ABORT>
+  <ABORT_RESPONSE>
+    <Header>
+      <MessageName>ABORT_RESPONSE</MessageName>
+      <Description PairName="S2F41">Host Command Send (ABORT)</Description>
+      <Stream>2</Stream>
+      <Function>42</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="HCACK">0</B>
+        <L Count="1" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">COMMANDID</A>
+            <B Count="1" Fixed="True" ItemName="CPACK" />
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </ABORT_RESPONSE>
+  <!-- ========================================================== -->
+  <CANCEL>
+    <Header>
+      <MessageName>CANCEL</MessageName>
+      <Description PairName="S2F41">Host Command Send (CANCEL)</Description>
+      <Stream>2</Stream>
+      <Function>41</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="6" Fixed="True" ItemName="RCMD">CANCEL</A>
+        <L Count="1" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">COMMANDID</A>
+            <A Count="64" Fixed="False" ItemName="CPVAL" />
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </CANCEL>
+  <CANCEL_RESPONSE>
+    <Header>
+      <MessageName>CANCEL_RESPONSE</MessageName>
+      <Description PairName="S2F41">Host Command Send (CANCEL)</Description>
+      <Stream>2</Stream>
+      <Function>42</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="HCACK">0</B>
+        <L Count="1" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">COMMANDID</A>
+            <B Count="1" Fixed="True" ItemName="CPACK" />
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </CANCEL_RESPONSE>
+  <!-- ========================================================== -->  
+  <LOCATE>
+    <Header>
+      <MessageName>LOCATE</MessageName>
+      <Description PairName="S2F41">Host Command Send (LOCATE)</Description>
+      <Stream>2</Stream>
+      <Function>41</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <A Count="6" Fixed="True" ItemName="RCMD">LOCATE</A>
+        <L Count="1" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">CARRIERID</A>
+            <A Count="64" Fixed="False" ItemName="CPVAL" />
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </LOCATE>
+  <LOCATE_RESPONSE>
+    <Header>
+      <MessageName>LOCATE_RESPONSE</MessageName>
+      <Description PairName="S2F41">Host Command Send (LOCATE)</Description>
+      <Stream>2</Stream>
+      <Function>42</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="HCACK">0</B>
+        <L Count="1" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="9" Fixed="True" ItemName="CPNAME">CARRIERID</A>
+            <B Count="1" Fixed="True" ItemName="CPACK" />
+          </L>          
+        </L>
+      </L>
+    </DataItem>
+  </LOCATE_RESPONSE>
+  <!-- ========================================================== -->
+  <COMMANDTRANSFER>
+    <Header>
+      <MessageName>COMMANDTRANSFER</MessageName>
+      <Description PairName="S2F49">Enhanced Remote Command</Description>
+      <Stream>2</Stream>
+      <Function>49</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="4" Fixed="True" ItemName="">
+        <U4 Count="1" Fixed="True" ItemName="DATAID">0</U4>
+        <A Count="64" Fixed="False" ItemName="OBJECTSPEC" />
+        <A Count="23" Fixed="True" ItemName="RCMD">TRANSFER_INC_LOT_STEPID</A>
+        <L Count="2" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="11" Fixed="True" ItemName="">COMMANDINFO</A>
+            <L Count="2" Fixed="True" ItemName="">
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="9" Fixed="True" ItemName="">COMMANDID</A>
+                <A Count="64" Fixed="False" ItemName="COMMANDID" />
+              </L>
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="8" Fixed="True" ItemName="">PRIORITY</A>
+                <U2 Count="1" Fixed="True" ItemName="PRIORITY">0</U2>
+              </L>             
+            </L>
+          </L>
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="25" Fixed="True" ItemName="">TRANSFERINFO_INC_LOT_STEP</A>
+            <L Count="5" Fixed="True" ItemName="">
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="9" Fixed="True" ItemName="">CARRIERID</A>
+                <A Count="64" Fixed="False" ItemName="CARRIERID" />
+              </L>
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="6" Fixed="True" ItemName="">SOURCE</A>
+                <A Count="64" Fixed="False" ItemName="SOURCE" />
+              </L>
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="4" Fixed="True" ItemName="">DEST</A>
+                <A Count="64" Fixed="False" ItemName="DEST" />
+              </L>
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="5" Fixed="True" ItemName="">LOTID</A>
+                <A Count="64" Fixed="False" ItemName="LOTID" />
+              </L>
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="6" Fixed="True" ItemName="">STEPID</A>
+                <A Count="64" Fixed="False" ItemName="STEPID" />
+              </L>
+            </L>
+          </L>
+        </L>
+      </L>
+    </DataItem>
+  </COMMANDTRANSFER>
+  <S2F50>
+    <Header>
+      <MessageName>S2F50</MessageName>
+      <Description PairName="S2F49">Enhanced Remote Command</Description>
+      <Stream>2</Stream>
+      <Function>50</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="HCACK">0</B>
+        <L Count="2" Fixed="True" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="11" Fixed="True" ItemName="">COMMANDINFO</A>
+            <L Count="2" Fixed="True" ItemName="">
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="9" Fixed="True" ItemName="">COMMANDID</A>
+                <B Count="1" Fixed="True" ItemName="CPACK">0</B>
+              </L>
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="8" Fixed="True" ItemName="">PRIORITY</A>
+                <B Count="1" Fixed="True" ItemName="CPACK">0</B>
+              </L>
+            </L>
+          </L>
+          <L Count="2" Fixed="True" ItemName="">
+            <A Count="12" Fixed="True" ItemName="">TRANSFERINFO</A>
+            <L Count="3" Fixed="True" ItemName="">             
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="9" Fixed="True" ItemName="">CARRIERID</A>
+                <B Count="1" Fixed="True" ItemName="CPACK">0</B>
+              </L>
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="6" Fixed="True" ItemName="">SOURCE</A>
+                <B Count="1" Fixed="True" ItemName="CPACK">0</B>
+              </L>
+              <L Count="2" Fixed="True" ItemName="">
+                <A Count="4" Fixed="True" ItemName="">DEST</A>
+                <B Count="1" Fixed="True" ItemName="CPACK">0</B>
+              </L>              
+            </L>
+          </L>          
+        </L>
+      </L>
+    </DataItem>
+  </S2F50>
+  <S2F50>
+    <Header>
+      <MessageName>S2F50</MessageName>
+      <Description PairName="S2F49">Enhanced Remote Command Acknowledge</Description>
+      <Stream>2</Stream>
+      <Function>50</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="HCACK">0</B>
+        <L Count="0" Fixed="True" ItemName="" />
+      </L>
+    </DataItem>
+  </S2F50>
+  <!-- ========================================================== -->  
+  <S5F1>
+    <Header>
+      <MessageName>S5F1</MessageName>
+      <Description PairName="S5F1">Alarm Report Send</Description>
+      <Stream>5</Stream>
+      <Function>1</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="3" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="ALCD">0</B>
+        <U4 Count="1" Fixed="True" ItemName="ALID">0</U4>
+        <A Count="64" Fixed="False" ItemName="ALTX" />
+      </L>
+    </DataItem>
+  </S5F1>
+  <S5F2>
+    <Header>
+      <MessageName>S5F2</MessageName>
+      <Description PairName="S5F1">Alarm Report Send</Description>
+      <Stream>5</Stream>
+      <Function>2</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="ACKC5">0</B>
+    </DataItem>
+  </S5F2>
+  <!-- ========================================================== -->
+  <S5F3>
+    <Header>
+      <MessageName>S5F3</MessageName>
+      <Description PairName="S5F3">Enable/Disable Alarm Send</Description>
+      <Stream>5</Stream>
+      <Function>3</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="ALED">0</B>
+        <U4 Count="1" Fixed="True" ItemName="ALID">0</U4>
+      </L>
+    </DataItem>
+  </S5F3>
+  <S2F36>
+    <Header>
+      <MessageName>S2F36</MessageName>
+      <Description PairName="S2F36">Link Event Report Ack </Description>
+      <Stream>2</Stream>
+      <Function>36</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="ACKC5">0</B>
+    </DataItem>
+  </S2F36>
+  <!-- ========================================================== -->
+  <S5F3>
+    <Header>
+      <MessageName>S5F3</MessageName>
+      <Description PairName="S5F3">Enable/Disable Alarm Send</Description>
+      <Stream>5</Stream>
+      <Function>3</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="1000" Fixed="False" ItemName="">
+        <B Count="1" Fixed="True" ItemName="ALED">0</B>
+        <U4 Count="1" Fixed="True" ItemName="ALID">0</U4>
+      </L>
+    </DataItem>
+  </S5F3>
+  <S5F4>
+    <Header>
+      <MessageName>S5F4</MessageName>
+      <Description PairName="S5F4">Enable/Disable Alarm Ack</Description>
+      <Stream>5</Stream>
+      <Function>4</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="ALED">0</B>
+    </DataItem>
+  </S5F4>  
+  <!-- ========================================================== -->    
+  <S5F5>
+    <Header>
+      <MessageName>S5F5</MessageName>
+      <Description PairName="S5F5">Alarm Report Send</Description>
+      <Stream>5</Stream>
+      <Function>5</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="1000" Fixed="False" ItemName="">
+        <U4 Count="1" Fixed="True" ItemName="ALID">0</U4>
+      </L>
+    </DataItem>
+  </S5F5>
+  <S5F6>
+    <Header>
+      <MessageName>S5F6</MessageName>
+      <Description PairName="S5F6">Alarm Report Send</Description>
+      <Stream>5</Stream>
+      <Function>6</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="100" Fixed="False" ItemName="">
+        <L Count="3" Fixed="True" ItemName="">
+          <B Count="1" Fixed="True" ItemName="ALCD">0</B>
+          <U4 Count="1" Fixed="True" ItemName="ALID">0</U4>
+          <A Count="64" Fixed="False" ItemName="ALTX" />
+        </L>
+      </L>
+    </DataItem>
+  </S5F6>
+  <!-- ========================================================== -->
+  <EVENTRPTID>
+    <Header>
+      <MessageName>EVENTRPTID</MessageName>
+      <Description PairName="S6F11">Event Report Send</Description>
+      <Stream>6</Stream>
+      <Function>11</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </EVENTRPTID>
+  <EVENTRPTID>
+    <Header>
+      <MessageName>EVENTRPTID</MessageName>
+      <Description PairName="S6F11">Event Report Send</Description>
+      <Stream>6</Stream>
+      <Function>12</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="ACKC6">0</B>
+    </DataItem>
+  </EVENTRPTID>
+  <!-- ========================================================== -->
+  <S6F15>
+    <Header>
+      <MessageName>S6F15_EventReportRequest</MessageName>
+      <Description PairName="S6F15">Event Report Request</Description>
+      <Stream>6</Stream>
+      <Function>15</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>      
+      <U2 Count="1" Fixed="True" ItemName="CEID">0</U2>      
+    </DataItem>
+  </S6F15>
+  <S6F16>
+    <Header>
+      <MessageName>S6F16</MessageName>
+      <Description PairName="S6F16">Event Report Data</Description>
+      <Stream>6</Stream>
+      <Function>16</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>      
+      <L Count="3" Fixed="True" ItemName="">
+        <U4 Count="1" Fixed="True" ItemName="DATAID">0</U4>
+        <U2 Count="1" Fixed="True" ItemName="CEID">0</U2>
+        <L Count="100" Fixed="False" ItemName="">
+          <L Count="2" Fixed="True" ItemName="">
+            <U2 Count="1" Fixed="True" ItemName="RPTID">0</U2>
+            <L Count="100" Fixed="False" ItemName="">
+              <U2 Count="1" Fixed="True" ItemName="VID">0</U2>
+            </L>
+          </L>
+        </L>
+      </L>      
+    </DataItem>
+  </S6F16>
+  <!-- ========================================================== -->
+  <S6F19>
+    <Header>
+      <MessageName>S6F19_IndividualReportRequest</MessageName>
+      <Description PairName="S6F19">Individual Report Request </Description>
+      <Stream>6</Stream>
+      <Function>19</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <U2 Count="1" Fixed="True" ItemName="RPTID">0</U2>
+    </DataItem>
+  </S6F19>
+  <S6F20>
+    <Header>
+      <MessageName>S6F20</MessageName>
+      <Description PairName="S6F20">Individual Report Data </Description>
+      <Stream>6</Stream>
+      <Function>20</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="100" Fixed="False" ItemName="">        
+        <U2 Count="1" Fixed="True" ItemName="VID">0</U2>        
+      </L>
+    </DataItem>
+  </S6F20>
+  <!-- ========================================================== -->
+  <S9F1>
+    <Header>
+      <MessageName>S9F1</MessageName>
+      <Description PairName="S9F1">Unrecognized Device Id</Description>
+      <Stream>9</Stream>
+      <Function>1</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="10" Fixed="True" ItemName="MHEAD">0 0 0 0 0 0 0 0 0 0</B>
+    </DataItem>
+  </S9F1>
+  <S9F2>
+    <Header>
+      <MessageName>S9F2</MessageName>
+      <Description PairName="S9F1">Unrecognized Device Id</Description>
+      <Stream>9</Stream>
+      <Function>2</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S9F2>
+  <S9F3>
+    <Header>
+      <MessageName>S9F3</MessageName>
+      <Description PairName="S9F3">Unrecognized Stream Type</Description>
+      <Stream>9</Stream>
+      <Function>3</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="10" Fixed="True" ItemName="MHEAD">0 0 0 0 0 0 0 0 0 0</B>
+    </DataItem>
+  </S9F3>
+  <S9F4>
+    <Header>
+      <MessageName>S9F4</MessageName>
+      <Description PairName="S9F3">Unrecognized Stream Type</Description>
+      <Stream>9</Stream>
+      <Function>4</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S9F4>
+  <S9F5>
+    <Header>
+      <MessageName>S9F5</MessageName>
+      <Description PairName="S9F5">Unrecognized Function Type</Description>
+      <Stream>9</Stream>
+      <Function>5</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="10" Fixed="True" ItemName="MHEAD">0 0 0 0 0 0 0 0 0 0</B>
+    </DataItem>
+  </S9F5>
+  <S9F6>
+    <Header>
+      <MessageName>S9F6</MessageName>
+      <Description PairName="S9F5">Unrecognized Function Type</Description>
+      <Stream>9</Stream>
+      <Function>6</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S9F6>
+  <S9F7>
+    <Header>
+      <MessageName>S9F7</MessageName>
+      <Description PairName="S9F7">Illegal Data</Description>
+      <Stream>9</Stream>
+      <Function>7</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="10" Fixed="True" ItemName="MHEAD">0 0 0 0 0 0 0 0 0 0</B>
+    </DataItem>
+  </S9F7>
+  <S9F8>
+    <Header>
+      <MessageName>S9F8</MessageName>
+      <Description PairName="S9F7">Illegal Data</Description>
+      <Stream>9</Stream>
+      <Function>8</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S9F8>
+  <S9F9>
+    <Header>
+      <MessageName>S9F9</MessageName>
+      <Description PairName="S9F9">Transaction Timer Timeout</Description>
+      <Stream>9</Stream>
+      <Function>9</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="10" Fixed="True" ItemName="SHEAD">0 0 0 0 0 0 0 0 0 0</B>
+    </DataItem>
+  </S9F9>
+  <S9F10>
+    <Header>
+      <MessageName>S9F10</MessageName>
+      <Description PairName="S9F9">Transaction Timer Timeout</Description>
+      <Stream>9</Stream>
+      <Function>10</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S9F10>
+  <S9F11>
+    <Header>
+      <MessageName>S9F11</MessageName>
+      <Description PairName="S9F11">Data Too Long</Description>
+      <Stream>9</Stream>
+      <Function>11</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="10" Fixed="True" ItemName="MHEAD">0 0 0 0 0 0 0 0 0 0</B>
+    </DataItem>
+  </S9F11>
+  <S9F12>
+    <Header>
+      <MessageName>S9F12</MessageName>
+      <Description PairName="S9F11">Data Too Long</Description>
+      <Stream>9</Stream>
+      <Function>12</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem />
+  </S9F12>
+  <TERMINAL_REQ>
+    <Header>
+      <MessageName>TERMINAL_REQ</MessageName>
+      <Description PairName="S10F1">TERMINAL_REQ</Description>
+      <Stream>10</Stream>
+      <Function>1</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="TID" />
+        <A Count="64" Fixed="False" ItemName="TEXT" />
+      </L>
+    </DataItem>
+  </TERMINAL_REQ>
+  <TERMINAL_REQ>
+    <Header>
+      <MessageName>TERMINAL_REQ</MessageName>
+      <Description PairName="S10F1">TERMINAL_REQ</Description>
+      <Stream>10</Stream>
+      <Function>2</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="ACKC10" />
+    </DataItem>
+  </TERMINAL_REQ>
+  <TERMINALDISPLAY>
+    <Header>
+      <MessageName>TERMINALDISPLAY</MessageName>
+      <Description PairName="S10F3">TERMINALDISPLAY</Description>
+      <Stream>10</Stream>
+      <Function>3</Function>
+      <Direction>H-&gt;E</Direction>
+      <Wait>True</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <L Count="2" Fixed="True" ItemName="">
+        <B Count="1" Fixed="True" ItemName="TID" />
+        <A Count="64" Fixed="False" ItemName="TEXT" />
+      </L>
+    </DataItem>
+  </TERMINALDISPLAY>
+  <TERMINALDISPLAY_RESPONSE>
+    <Header>
+      <MessageName>TERMINALDISPLAY_RESPONSE</MessageName>
+      <Description PairName="S10F3">TERMINALDISPLAY</Description>
+      <Stream>10</Stream>
+      <Function>4</Function>
+      <Direction>H&lt;-E</Direction>
+      <Wait>False</Wait>
+      <AutoReply>False</AutoReply>
+      <NoLogging>False</NoLogging>
+    </Header>
+    <DataItem>
+      <B Count="1" Fixed="True" ItemName="ACKC10" />
+    </DataItem>
+  </TERMINALDISPLAY_RESPONSE>
+</SECSMessage>
