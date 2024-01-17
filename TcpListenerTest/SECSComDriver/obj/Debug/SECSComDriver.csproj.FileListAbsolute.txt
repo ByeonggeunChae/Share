@@ -1,8 +1,0 @@
-D:\02_Test\TCPListenerTest\SECSComDriver\bin\Debug\SECSComDriver.dll
-D:\02_Test\TCPListenerTest\SECSComDriver\bin\Debug\SECSComDriver.pdb
-D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSComDriver.csproj.AssemblyReference.cache
-D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSComDriver.Properties.Resources.resources
-D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSComDriver.csproj.GenerateResource.cache
-D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSComDriver.csproj.CoreCompileInputs.cache
-D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSComDriver.dll
-D:\02_Test\TCPListenerTest\SECSComDriver\obj\Debug\SECSComDriver.pdb
