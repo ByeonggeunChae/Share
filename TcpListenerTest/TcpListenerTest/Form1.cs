@@ -53,7 +53,7 @@ namespace TcpListenerTest
             //XmlDocument aDispDoc = null;
             //aDispDoc = MakeBasicXml(aDispDoc);
 
-            //XmlDocument test = Test();
+            XmlDocument test = Test();
 
             //ProcessModule mainModule = Process.GetCurrentProcess().MainModule;
             //string str = mainModule.FileName.Replace(mainModule.ModuleName, "SEComEnabler.SEComDriver.dll");
